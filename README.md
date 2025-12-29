@@ -28,7 +28,9 @@ Given food safety recall texts from various web sources, the system predicts two
 
 The hierarchical structure includes both main categories and detailed sub-task labels as illustrated below:
 
+<div align="center">
 <img src="image/overview.png" alt="Dataset Structure" width="500"/>
+</div>
 
 The dataset exhibits severe class imbalance with long-tail distributions (128x imbalance for hazard labels, 1,142x for product labels).
 
@@ -57,7 +59,9 @@ The data is located in the `data/` directory:
 
 The system employs a multi-task learning framework with the following components:
 
-<img src="image/pipeline.png" alt="System Architecture" width="500"/>
+<div align="center">
+<img src="image/pipeline.png" alt="System Architecture" width="400"/>
+</div>
 
 ### Key Components
 
@@ -88,7 +92,9 @@ The system employs a multi-task learning framework with the following components
 
 ### Example Classifications
 
+<div align="center">
 <img src="image/sample.png" alt="Example Results" width="400"/>
+</div>
 
 ---
 
