@@ -133,12 +133,12 @@ def clean_foodhazard_text(text):
 # ==============================
 # APPLY PIPELINE
 # ==============================
-df = pd.read_csv("data/train_data/aug1/aug_data1.csv")
+df = pd.read_csv("data/train_data/aug2/aug_data2.csv")
 
 df["title"] = df["title"].apply(extract_text_from_html).apply(clean_foodhazard_text)
 df["text"]  = df["text"].apply(extract_text_from_html).apply(clean_foodhazard_text)
 
 df["merged_text"] = (df["title"] + " " + df["text"]).str.lower().str.strip()
 
-df.to_csv("data/train_data/aug1/cleaned_aug_data1.csv", index=False)
+df.to_csv("data/train_data/aug2/cleaned_train_aug2.csv", index=False)
 print("CLEAN PIPELINE DONE.")
